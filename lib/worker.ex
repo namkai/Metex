@@ -96,10 +96,6 @@ defmodule Metex.Worker do
     end
   end
 
-  # def apikey do
-  #   "APIKEY-GOES-HERE"
-  # end
-
   defp update_stats(old_stats, location) do
     case Map.has_key?(old_stats, location) do
       true ->
